@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+</head>
+<body>
+    <h1>About Xochil</h1>
+    <ol>
+        <li>Was Xochil born in Seattle?</li>
+        <li>Does Xochil have an older sister?</li>
+        <li>Does Xochil play the piano?</li>
+        <li>Does Xochil love bicycles?</li>
+        <li>Has Xochil been to Paris?</li>
+    </ol>
+    
+    <script>
+        'use strict';
+
+        //userName Question
+        var username = prompt ('Welcome to my page! What\'s your name?');
+        console.log('What is your name? :' + userName);
+
+        //Hometown Question
+        var born = prompt('Was Xochil born in Seattle?');
+        if ( born==='yes' || born==='yeah'){
+            alert('Bingo,' + userName + ', born and raised!');
+        }else if (born=== 'no' || 'nope'){
+            alert ('Whoops!  I was totally born here!');
+        }else {
+            alert('Come on, answer yes or no!');
+        }
+        console.log('Was Xochil born in Seattle :' + born);
+
+        //Sibling Question
+        var olderSib = prompt ('Does Xochil have an older sister?');
+        if (olderSib==='yes' || olderSib==='yeah'){
+            alert('Actaully, that\'s incorrect' + userName +'. I have a younger sister.');
+        }else if (olderSib=== 'no' || olderSib==='nope'){
+            alert('Genius' + userName + '! I do have a LOVELY younger sister!' );
+        }else {}
+
+                
+        
+    
+    </script>
+</body>
+</html>
