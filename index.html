@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+     
 </head>
 <body>
     <h1>About Xochil</h1>
     <ol>
-        <li>Was Xochil born in Seattle?</li>
-        <li>Does Xochil have an older sister?</li>
-        <li>Does Xochil play the piano?</li>
-        <li>Does Xochil love bicycles?</li>
-        <li>Has Xochil been to Paris?</li>
+        <li>Was Xochil born in Seattle? Yes</li>
+        <li>Does Xochil have an older sister? No</li>
+        <li>Does Xochil play the bass? No</li>
+        <li>Does Xochil love bicycles? Yes</li>
+        <li>Has Xochil been to Paris? No</li>
     </ol>
     
     <script>
         'use strict';
 
         //userName Question
-        var username = prompt ('Welcome to my page! What\'s your name?');
-        console.log('What is your name? :' + userName);
+        var userName = prompt ('Hi! My name is Xochil! Welcome to my page! What\'s your name?');
+        console.log('Hi! My name is Xochil! Welcome to my page! What\'s your name? :' + userName);
 
         //Hometown Question
         var born = prompt('Was Xochil born in Seattle?');
-        if ( born==='yes' || born==='yeah'){
-            alert('Bingo,' + userName + ', born and raised!');
-        }else if (born=== 'no' || 'nope'){
+        if (born==='yes' || born==='y'){
+            alert('Bingo, ' + userName + ', born and raised!');
+        }else if (born=== 'no' || 'n'){
             alert ('Whoops!  I was totally born here!');
         }else {
             alert('Come on, answer yes or no!');
@@ -36,13 +38,51 @@
 
         //Sibling Question
         var olderSib = prompt ('Does Xochil have an older sister?');
-        if (olderSib==='yes' || olderSib==='yeah'){
-            alert('Actaully, that\'s incorrect' + userName +'. I have a younger sister.');
-        }else if (olderSib=== 'no' || olderSib==='nope'){
-            alert('Genius' + userName + '! I do have a LOVELY younger sister!' );
-        }else {}
+        if (olderSib==='yes' || olderSib==='y'){
+            alert('Actually, that\'s incorrect, ' + userName +'. I have a younger sister.');
+        }else if (olderSib=== 'no' || olderSib==='n'){
+            alert('Genius, ' + userName + '! I do have a lovely YOUNGER sister!' );
+        }else {
+            alert('Come on, answer yes or no!');
+        }
+        console.log('Does Xochil have an older sister:' + olderSib );
 
-                
+       //Piano Playing
+       var bass = prompt ('Does Xochil play the bass?');
+       if (bass==='yes' || bass==='y') {
+           alert('Oh no, ' + userName + '! I actually play the piano! But I AM learning the bass!');
+       }else if (bass==='no' || bass==='n'){
+           alert('That correct, ' + userName + '! I actually play the piano!');
+       }else {
+           alert('Come on, answer yes or no!');
+       }
+       console.log('Does Xochil play the bass:' + bass);
+
+       //Bicycle Question
+       var bicycle = prompt ('Does Xochil love bicycles?');
+       if (bicycle==='yes' || bicycle==='y') {
+           alert('Bingo, ' + userName + ' ! I love bicycles and cycling!');
+       }else if (bicycle==='no' || bicycle==='n'){
+           alert('Doh ' + userName + ' ! I am a huge fan of bicycles and cycling!');
+       }else {
+           alert('Come on, answer yes or no!');
+       }
+       console.log('Does Xochil love bicycles:' + bicycle);
+
+       //Paris Question
+       var paris = prompt ('Has Xochil ever been to Paris?');
+       if (paris==='yes' || paris==='y') {
+           alert('Nope, that\'s incorrect, ' + userName + ' (although I do plan to visit there in the future!)');
+       }else if (paris==='no' || paris==='n'){
+           alert('You are correct ' + userName + ' ! I do have big plans to visit there in the future, however!');
+       }else {
+           alert('Come on, answer yes or no!');
+       } 
+       console.log('Has Xochil been to Paris:' + paris);   
+
+ 
+
+              
         
     
     </script>
