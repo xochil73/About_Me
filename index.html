@@ -27,6 +27,7 @@
 
         //Hometown Question
         var born = prompt('Was Xochil born in Seattle?');
+        born= born.toLowerCase();
         if (born==='yes' || born==='y'){
             alert('Bingo, ' + userName + ', born and raised!');
         }else if (born=== 'no' || 'n'){
@@ -38,6 +39,7 @@
 
         //Sibling Question
         var olderSib = prompt ('Does Xochil have an older sister?');
+        olderSib= olderSib.toLowerCase();
         if (olderSib==='yes' || olderSib==='y'){
             alert('Actually, that\'s incorrect, ' + userName +'. I have a younger sister.');
         }else if (olderSib=== 'no' || olderSib==='n'){
@@ -49,6 +51,7 @@
 
        //Piano Playing
        var bass = prompt ('Does Xochil play the bass?');
+       bass= bass.toLowerCase();
        if (bass==='yes' || bass==='y') {
            alert('Oh no, ' + userName + '! I actually play the piano! But I AM learning the bass!');
        }else if (bass==='no' || bass==='n'){
@@ -60,6 +63,7 @@
 
        //Bicycle Question
        var bicycle = prompt ('Does Xochil love bicycles?');
+       bicycle= bicycle.toLowerCase();
        if (bicycle==='yes' || bicycle==='y') {
            alert('Bingo, ' + userName + ' ! I love bicycles and cycling!');
        }else if (bicycle==='no' || bicycle==='n'){
@@ -71,6 +75,7 @@
 
        //Paris Question
        var paris = prompt ('Has Xochil ever been to Paris?');
+       paris= paris.toLowerCase();
        if (paris==='yes' || paris==='y') {
            alert('Nope, that\'s incorrect, ' + userName + ' (although I do plan to visit there in the future!)');
        }else if (paris==='no' || paris==='n'){
