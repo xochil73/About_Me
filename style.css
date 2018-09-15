@@ -1,6 +1,7 @@
 h1 {
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center
 }
 h1 {
     background-color: aqua;
@@ -10,4 +11,10 @@ html {
     background-color: pink;}
 body {
     background-color: orange;
+}
+h2 {font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center
+    
+    
 }
